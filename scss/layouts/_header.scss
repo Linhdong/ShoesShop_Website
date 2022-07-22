@@ -1,22 +1,17 @@
 .header {
+    background-color: $bg-dark;
+    padding: 10px 24px 8px;
+
     .container {
         .header__content {
+
+
             .brand-logo {
                 .brand-logo-link {
-                    .brand-logo-img {}
+                    .brand-logo-img {
+                        max-width: 116px;
+                    }
                 }
-            }
-
-            .header-links {
-                .cart-link {
-                    i {}
-
-                    .cart-quantity {}
-                }
-
-                .login-link {}
-
-                .register-link {}
             }
         }
     }
