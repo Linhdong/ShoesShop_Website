@@ -1,0 +1,88 @@
+//Reset
+@import "./../base/reset";
+//Variable
+@import "./../variable/variable";
+
+header {
+    width: 1280px;
+    height: 50px;
+    margin: 0 auto;
+    background: #000000 ;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        .logo-header {
+            img {
+                width: 116px;
+                height: 32px;
+                @include position($position-2nd, 24px, 10px, $right-1st, $bottom-1st);
+            }
+        }
+
+        .detail-header {
+            @include position($position-2nd, 1040px, 10px, $right-1st, $bottom-1st);
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                #item1 {
+                    a{
+                        img{
+                            width: 31px;
+                            height: 31px;
+                        }
+                    }
+                }
+
+                #item2 {
+                    margin-right: 15px;
+                    p{
+                        @include text($fontsize-pr-detail-l, $text-extralight, $text-c1-light, $line-height-1st);
+                    }
+                }
+
+                #item3 {
+                    margin-right: 15px;
+                    a{
+                        text-decoration: none;
+                        @include text($fontsize-header, $text-extralight, $text-c1-light, 0);
+                    }
+                }
+
+                #item4 {
+                    margin-right: 15px;
+                    a{
+                        text-decoration: none;
+                        @include text($fontsize-header, $text-extralight, $text-c1-light, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu{
+    
+    .container{
+        background-color: $bg-c1-menu-primary;
+        .navbar{
+            
+            .collapse{
+                .navbar-nav{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    .nav-item{
+                        margin-right: 15px;
+                        .nav-link{
+                            text-decoration: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

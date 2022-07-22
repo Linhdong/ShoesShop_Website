@@ -1,0 +1,58 @@
+//Font weight variable 
+$text-light: 200;
+$text-extralight: 300;
+$text-regular: 400;
+$text-semibold: 600;
+$text-extabold: 800;
+
+//Font size variable 
+$fontsize-header: 16px;
+$fontsize-menu: 20px;
+$fontsize-pr-detail-l: 30px;
+$fontsize-pr-detail-m: 24px;
+$fontsize-pr-detail-s: 16px;
+
+//color text
+$text-c1-dark: #000;
+$text-c1-light: #fff;
+
+//background variable 
+$bg-c1-header-primary: #000000;
+$bg-c1-menu-primary: #F5F5F5;
+$ng-c1-pr-detail-primary: #F8F8F8;
+$bg-c1-menu-bt-large: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+$bg-c1-menu-bt-small: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+$bg-c2-menu-bt-small: #CCCCCC;
+$bg-c1-relate-bt-medimum: #E1B067;
+$bg-c1-card-img: #F8F8F8;
+
+
+//lineheight variable
+$line-height-1st: 36px;
+
+//Mixin text
+@mixin text($fsize: $fontsize-header, $fweight: $text-extralight, $color: $text-c1-light, $lineheight: $line-height-1st) {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lineheight;
+    color: $color;
+}
+
+//posion variable 
+$position-1st: relative;
+$position-2nd: absolute;
+$top-1st: 0;
+$left-1st: 0;
+$right-1st: 0;
+$bottom-1st: 0;
+
+//Mixin positon
+@mixin position ($positon:$position-1st, $left:$left-1st, $top:$top-1st, $right:$right-1st, $bottom:$bottom-1st) {
+    position: $positon;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}
