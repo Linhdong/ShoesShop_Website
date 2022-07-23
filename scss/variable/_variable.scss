@@ -29,9 +29,10 @@ $bg-c1-card-img: #F8F8F8;
 
 //lineheight variable
 $line-height-1st: 36px;
+$line-height-menu: 24px;
 
 //Mixin text
-@mixin text($fsize: $fontsize-header, $fweight: $text-extralight, $color: $text-c1-light, $lineheight: $line-height-1st) {
+@mixin text($fsize: $fontsize-header, $fweight: $text-extralight, $color: $text-c1-dark, $lineheight: $line-height-1st) {
     font-family: 'Inter';
     font-style: normal;
     font-weight: $fweight;
@@ -44,9 +45,12 @@ $line-height-1st: 36px;
 $position-1st: relative;
 $position-2nd: absolute;
 $top-1st: 0;
+$top-fram: 20px;
 $left-1st: 0;
+$left-fram: 85px;
 $right-1st: 0;
 $bottom-1st: 0;
+
 
 //Mixin positon
 @mixin position ($positon:$position-1st, $left:$left-1st, $top:$top-1st, $right:$right-1st, $bottom:$bottom-1st) {
@@ -55,4 +59,14 @@ $bottom-1st: 0;
     top: $top;
     right: $right;
     bottom: $bottom;
+}
+
+//Width and Height variable
+$width-1st: 0;
+$height-1st: 0;
+
+//Mixin Dimession 
+@mixin dimession ($width-size: $width-1st, $height-size:$height-1st){
+    width: $width-size;
+    height: $height-size;
 }

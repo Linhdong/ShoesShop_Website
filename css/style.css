@@ -94,7 +94,233 @@ header .container .detail-header ul #item4 a {
 }
 .menu .container .navbar .collapse .navbar-nav .nav-item {
   margin-right: 15px;
+  position: relative;
+}
+.menu .container .navbar .collapse .navbar-nav .nav-item .nav-link-active {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+.menu .container .navbar .collapse .navbar-nav .nav-item .nav-link-active::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
 }
 .menu .container .navbar .collapse .navbar-nav .nav-item .nav-link {
   text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+.menu .container .navbar .collapse .navbar-nav .nav-item .nav-link::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+}
+.menu .container .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #000000;
+}
+.menu .container .navbar .collapse .navbar-nav .nav-item .nav-link:hover::before {
+  font-weight: 400;
+  transform: scale(1, 1);
+}
+
+.product-detail .container {
+  height: 530px;
+}
+.product-detail .container .content-product {
+  width: 1145px;
+  margin: 0 auto;
+  padding-top: 65px;
+  display: flex;
+}
+.product-detail .container .content-product .left-box {
+  width: 45%;
+  position: relative;
+}
+.product-detail .container .content-product .left-box .frame {
+  width: 334px;
+  height: 315px;
+  background: #F8F8F8;
+  position: absolute;
+  left: 85px;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+}
+.product-detail .container .content-product .left-box .frame img {
+  width: 230px;
+  height: 156px;
+  position: absolute;
+  left: 45px;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+}
+.product-detail .container .content-product .right-box {
+  width: 55%;
+  position: relative;
+}
+.product-detail .container .content-product .right-box .product-name {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  right: 0;
+  bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+}
+.product-detail .container .content-product .right-box .description {
+  max-width: 560px;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #140101;
+}
+.product-detail .container .content-product .right-box .status {
+  max-width: 195px;
+  position: absolute;
+  left: 0;
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1ED90E;
+}
+.product-detail .container .content-product .right-box .size {
+  max-width: 320px;
+  position: absolute;
+  left: 0;
+  top: 190px;
+  right: 0;
+  bottom: 0;
+}
+.product-detail .container .content-product .right-box .size .pro-size {
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1E1D1D;
+}
+.product-detail .container .content-product .right-box .price {
+  max-width: 110px;
+  position: absolute;
+  left: 0;
+  top: 245px;
+  right: 0;
+  bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FC0303;
+}
+.product-detail .container .content-product .right-box .quantity {
+  position: absolute;
+  left: 0;
+  top: 285px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.product-detail .container .content-product .right-box .quantity .up {
+  border: none;
+  outline: none;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFCFC;
+}
+.product-detail .container .content-product .right-box .quantity .number {
+  border: none;
+  outline: none;
+  background: #F5F5F5;
+  width: 50px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+}
+.product-detail .container .content-product .right-box .quantity .down {
+  border: none;
+  outline: none;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFCFC;
+}
+.product-detail .container .content-product .right-box .buy {
+  position: absolute;
+  left: 0;
+  top: 345px;
+  right: 0;
+  bottom: 0;
+}
+.product-detail .container .content-product .right-box .buy .push {
+  border: none;
+  outline: none;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  width: 175px;
+  height: 64px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFF8F8;
 }

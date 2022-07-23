@@ -7,11 +7,13 @@ header {
     width: 1280px;
     height: 50px;
     margin: 0 auto;
-    background: #000000 ;
+    background: #000000;
+
     .container {
         display: flex;
         justify-content: space-between;
         position: relative;
+
         .logo-header {
             img {
                 width: 116px;
@@ -22,13 +24,15 @@ header {
 
         .detail-header {
             @include position($position-2nd, 1040px, 10px, $right-1st, $bottom-1st);
+
             ul {
                 list-style: none;
                 display: flex;
                 align-items: center;
+
                 #item1 {
-                    a{
-                        img{
+                    a {
+                        img {
                             width: 31px;
                             height: 31px;
                         }
@@ -37,14 +41,16 @@ header {
 
                 #item2 {
                     margin-right: 15px;
-                    p{
+
+                    p {
                         @include text($fontsize-pr-detail-l, $text-extralight, $text-c1-light, $line-height-1st);
                     }
                 }
 
                 #item3 {
                     margin-right: 15px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         @include text($fontsize-header, $text-extralight, $text-c1-light, 0);
                     }
@@ -52,7 +58,8 @@ header {
 
                 #item4 {
                     margin-right: 15px;
-                    a{
+
+                    a {
                         text-decoration: none;
                         @include text($fontsize-header, $text-extralight, $text-c1-light, 0);
                     }
@@ -62,27 +69,181 @@ header {
     }
 }
 
-.menu{
-    
-    .container{
+.menu {
+
+    .container {
         background-color: $bg-c1-menu-primary;
-        .navbar{
-            
-            .collapse{
-                .navbar-nav{
+
+        .navbar {
+            .collapse {
+                .navbar-nav {
                     height: 50px;
                     display: flex;
                     align-items: center;
                     list-style: none;
-                    .nav-item{
+
+                    .nav-item {
                         margin-right: 15px;
-                        .nav-link{
+                        position: relative;
+
+                        .nav-link-active {
                             text-decoration: none;
+                            @include text($fontsize-menu, $text-regular, $text-c1-dark, $line-height-menu);
+
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                height: 1px;
+                                background-color: $bg-c1-header-primary;
+                                position: absolute;
+                                bottom: -10px;
+                                left: 0;
+                            }
+                        }
+
+                        .nav-link {
+                            text-decoration: none;
+                            @include text($fontsize-menu, $text-extralight, $text-c1-dark, $line-height-menu);
+
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                height: 1px;
+                                background-color: $bg-c1-header-primary;
+                                position: absolute;
+                                bottom: -10px;
+                                left: 0;
+                                transform: scale(0, 1);
+                                transition: transform 0.3s;
+                            }
+
+                            &:hover {
+                                color: $bg-c1-header-primary;
+                                ;
+
+                                &::before {
+                                    font-weight: $text-regular;
+                                    transform: scale(1, 1);
+                                }
+                            }
                         }
                     }
-                    
+
                 }
             }
         }
+    }
+}
+
+.product-detail {
+    .container {
+        height: 530px;
+
+        .content-product {
+            width: 1145px;
+            margin: 0 auto;
+            padding-top: 65px;
+            display: flex;
+
+            .left-box {
+                width: 45%;
+                position: relative;
+
+                .frame {
+                    @include dimession(334px, 315px);
+                    background: #F8F8F8;
+                    @include position($position-2nd, 85px, 20px, 0, 0);
+                    img {
+                        width: 230px;
+                        height: 156px;
+                        @include position($position-2nd, 45px, 80px, 0, 0);
+                    }
+                }
+            }
+
+            .right-box {
+                width: 55%;
+                position: relative;
+
+                .product-name {
+                    @include position ($position-2nd, 0, 20px, 0, 0);
+                    @include text($fontsize-pr-detail-l, $text-extralight, $text-c1-dark, $line-height-1st)
+                }
+
+                .description {
+                    max-width: 560px;
+                    @include position($position-2nd, 0, 65px, 0, 0);
+                    @include text($fontsize-header, $text-regular, #140101, 19px)
+                }
+
+                .status {
+                    max-width: 195px;
+                    @include position($position-2nd, 0, 150px, 0, 0);
+                    @include text($fontsize-pr-detail-m, 500, #1ED90E, 29px)
+                }
+
+                .size {
+                    max-width: 320px;
+                    @include position($position-2nd, 0, 190px, 0, 0);
+                    .pro-size {
+                        border: none;
+                        outline: none;
+                        margin-right: 10px;
+                        cursor: pointer;
+                        @include dimession(50px, 50px);
+                        @include text($fontsize-pr-detail-m, $text-semibold, #1E1D1D, 29px);
+                    }
+                }
+
+                .price {
+                    max-width: 110px;
+                    @include position($position-2nd, 0, 245px, 0, 0);
+                    @include text($fontsize-pr-detail-l, $text-semibold, #FC0303, $line-height-1st)
+                }
+
+                .quantity {
+                    @include position($position-2nd, 0, 285px, 0, 0);
+                    display: flex;
+
+                    .up {
+                        border: none;
+                        outline: none;
+                        background: $bg-c1-menu-bt-small;
+                        cursor: pointer;
+                        @include dimession(50px, 50px);
+                        @include text($fontsize-pr-detail-l, $text-regular, #FFFCFC, $line-height-1st)
+                    }
+
+                    .number {
+                        border: none;
+                        outline: none;
+                        background: #F5F5F5;
+                        @include dimession(50px, 50px);
+                        @include text($fontsize-pr-detail-l, $text-regular, $text-c1-dark, $line-height-1st);
+                    }
+
+                    .down {
+                        border: none;
+                        outline: none;
+                        background: $bg-c1-menu-bt-small;
+                        cursor: pointer;
+                        @include dimession(50px, 50px);
+                        @include text($fontsize-pr-detail-l, $text-regular, #FFFCFC, $line-height-1st)
+                    }
+                }
+
+                .buy {
+                    @include position($position-2nd, 0, 345px, 0, 0);
+                    .push {
+                        border: none;
+                        outline: none;
+                        background: $bg-c1-menu-bt-large;
+                        @include dimession(175px, 64px);
+                        @include text($fontsize-pr-detail-m, 500, #FFF8F8, 29px);
+                    }
+                }
+            }
+        }
+
     }
 }
