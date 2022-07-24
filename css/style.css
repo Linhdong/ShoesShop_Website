@@ -116,3 +116,188 @@
   align-items: center;
   justify-content: center;
 }
+
+.footer-product {
+  padding: 20px 0;
+}
+.footer-product .container .bg-top-footer {
+  height: 115px;
+  background: #fff;
+}
+.footer-product .container .bg-top-footer .top-footer {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer-product .container .bg-top-footer .top-footer .card-1 {
+  width: 300px;
+}
+.footer-product .container .bg-top-footer .top-footer .card-1 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-1 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-top-footer .top-footer .card-1 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-2 {
+  width: 300px;
+  padding-left: 40px;
+  border-left: 1px solid #CBC9C9;
+  border-right: 1px solid #CBC9C9;
+}
+.footer-product .container .bg-top-footer .top-footer .card-2 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-2 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-top-footer .top-footer .card-2 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 {
+  width: 400px;
+  padding-left: 40px;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: #000000;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 .list-group .list-group-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  transition: all 0.3s linear;
+}
+.footer-product .container .bg-top-footer .top-footer .card-3 .list-group .list-group-item a:hover {
+  color: #E1B067;
+}
+.footer-product .container .bg-bottom-footer {
+  padding: 15px 0;
+  height: 115px;
+  background: #efeeee;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 {
+  width: 300px;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 .list-group .list-group-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  transition: all 0.3s linear;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-1 .list-group .list-group-item a:hover {
+  color: #E1B067;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 {
+  width: 300px;
+  padding-left: 40px;
+  border-left: 1px solid #CBC9C9;
+  border-right: 1px solid #CBC9C9;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 .list-group .list-group-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  transition: all 0.3s linear;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-2 .list-group .list-group-item a:hover {
+  color: #E1B067;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 {
+  width: 400px;
+  padding-left: 40px;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 .card-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 .list-group {
+  list-style: none;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 .list-group .list-group-item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 .list-group .list-group-item a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  transition: all 0.3s linear;
+}
+.footer-product .container .bg-bottom-footer .bottom-footer .card-3 .list-group .list-group-item a:hover {
+  color: #E1B067;
+}

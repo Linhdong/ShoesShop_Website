@@ -46,7 +46,7 @@
                         .list-group-item {
                             a {
                                 text-decoration: none;
-                                @include text(12px, $text-medium, $text-black);
+                                @include textStyle (12px, $text-medium);
                             }
                         }
                     }
@@ -57,18 +57,18 @@
                     padding-left: 40px;
 
                     .card-header {
-                        @include text($text-sz-2xl, $text-semibold, $text-black);
+                        @include textStyle ($text-sz-2xl, $text-semibold, $text-black);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text(12px, $text-medium);
+                            @include textStyle (12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text(12px, $text-medium);
+                                @include textStyle (12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
@@ -95,18 +95,18 @@
                     width: 300px;
 
                     .card-header {
-                        @include text($text-sz-2xl, $text-semibold);
+                        @include textStyle ($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text(12px, $text-medium);
+                            @include textStyle (12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text(12px, $text-medium);
+                                @include textStyle (12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
@@ -124,18 +124,18 @@
                     border-right: 1px solid #CBC9C9;
 
                     .card-header {
-                        @include text($text-sz-2xl, $text-semibold);
+                        @include textStyle ($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text(12px, $text-medium);
+                            @include textStyle (12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text(12px, $text-medium);
+                                @include textStyle (12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
@@ -151,18 +151,18 @@
                     padding-left: 40px;
 
                     .card-header {
-                        @include text($text-sz-2xl, $text-semibold);
+                        @include textStyle ($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text(12px, $text-medium);
+                            @include textStyle (12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text(12px, $text-medium);
+                                @include textStyle (12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
