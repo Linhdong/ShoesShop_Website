@@ -1,0 +1,71 @@
+// PRODUCT FEATURE
+.products {
+    padding-bottom: 104px;
+    .container {
+        h3 {
+            font-weight: $text-medium;
+            font-size: $text-sz-4xl;
+            line-height: $lh;
+            margin-bottom: 90px;
+            text-align: center;
+        }
+
+        .products-grids {
+            .prod-slide-grid {
+                padding: 0 33.5px;
+                .product__content {
+                    background-color: $bg-secondary;
+                    .product-img {
+                        padding: 45px 57px 0 57px;
+                        // max-width: 220px;
+                        img {
+                        }
+                    }
+
+                    .product-info {
+                        padding: 0 23px;
+                        a {
+                            color: $text-black;
+                            font-weight: $text-light;
+                            font-size: 24px;
+                            line-height: $lh;
+                            h5 {}
+                        }
+
+                        p {
+                            color: $text-light-gray;
+                            line-height: 1.2;
+                            font-weight: $text-light;
+                            font-size: $text-sz-2xl;
+                        }
+                    }
+
+                    .product-footer {
+                        #btnBuyNow {
+                            height: 64px;
+                            background-color: $bg-btn-yellow;
+                            border: 1px solid transparent;
+                            font-size: 24px;
+                            line-height: 1.2;
+                            font-weight: $text-thin;
+                        }
+
+                        p {
+                            background-color: $bg-light-gray;
+                            font-size: 24px;
+                            font-weight: $text-semibold;
+                            line-height: 1.2;
+                            margin: 0;
+                            color: $text-black;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PRODUCT FEATURE

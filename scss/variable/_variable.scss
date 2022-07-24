@@ -1,15 +1,24 @@
 // Background-color
 $bg-dark: #000000;
+$bg-secondary: #F8F8F8;
+$bg-btn-yellow: #E1B067;
+$bg-light-gray: #DEDDDC;
+
 
 // Text-color
+$text-black: #000000;
+$text-light-gray: #CBC9C9;
 
 // font-size
 $text-sz-2xl: 20px;
+
 $text-sz-4xl: 40px;
 
 // font-weight
-$text-medium: 300;
+$text-thin: 200;
+$text-light: 300;
+$text-medium: 400;
+$text-semibold: 600;
 
 // line-height
-$line-height-1rem: 24.2px;
-$line-height-3rem: 48.41px;
+$lh: 1.2;
