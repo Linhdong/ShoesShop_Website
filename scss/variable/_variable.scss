@@ -55,17 +55,25 @@ $top-fram: 20px;
 $top-img-card: 45px;
 $top-body-card: 231px;
 $top-btn-card: 303px;
+$top-title-register: 30px;
+$top-form: 115px;
+$top-btn-submit: 255px;
 $left-1st: 0;
 $left-fram: 85px;
 $left-img-card: 57px;
 $left-body-card: 23px;
 $left-btn-price-card: 157px;
+$left-title-register: 524px;
+$left-form: 125px;
+$left-btn-submit: 495px;
 $right-1st: 0;
 $right-img-card: 0;
 $right-body-card: 0;
+$right-title-register: 0;
 $bottom-1st: 0;
 $bottom-img-card: 0;
 $bottom-body-card: 0; 
+$bottom-title-register: 0;
 
 
 //Mixin positon
@@ -88,6 +96,16 @@ $width-body-card: 187px;
 $height-body-card: 29px;
 $width-btn-card: 175px;
 $height-btn-card: 64px;
+$width-title-register: 156px;
+$height-title-register: 48px;
+//Width and height register
+$width-form: 1000px;
+$height-form: 400px;
+//Widht and height input 
+$width-input-box: 482px;
+$height-input-box: 51px;
+$width-input: 346px;
+$height-input: 36px;
 //Mixin Dimession 
 @mixin dimession ($width-size: $width-1st, $height-size:$height-1st){
     width: $width-size;

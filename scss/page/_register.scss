@@ -1,0 +1,144 @@
+//Reset
+@import "./../base/reset";
+//Variable
+@import "./../variable/variable";
+
+.register {
+    .container {
+        position: relative;
+        height: 538px;
+        .title-register {
+            @include dimession($width-title-register, $height-title-register);
+            @include position($position-2nd, $left-title-register, $top-title-register, $right-title-register, $bottom-title-register);
+
+            h3 {
+                @include text($fontsize-title-detail-pr, $text-regular, $text-c1-dark, $line-height-detail-pr);
+            }
+        }
+
+        .infor-register {
+            position: absolute;
+            @include dimession($width-form, $height-form);
+            @include position($position-2nd, $left-form, $top-form, $right-1st, $bottom-1st);
+
+            .user-detail {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .left-infor {
+                    width: 50%;
+
+                    .input-box {
+                        // border: 1px solid black;
+                        @include dimession($width-input-box, $height-input-box);
+                        border-bottom: 3px solid #AE18E2;
+                        margin-bottom: 30px;
+
+                        input {
+                            width: 346px;
+                            height: 36px;
+                            @include dimession($width-input, $height-input);
+                            margin: 5px 0;
+                            border: none;
+                            outline: none;
+
+                            &::placeholder {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 36px;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+
+                .right-infor {
+                    width: 50%;
+
+                    .input-box {
+                        // border: 1px solid black;
+                        @include dimession($width-input-box, $height-input-box);
+                        border-bottom: 3px solid #AE18E2;
+                        margin-bottom: 30px;
+
+                        input {
+                            width: 346px;
+                            height: 36px;
+                            @include dimession($width-input, $height-input);
+                            margin: 5px 0;
+                            border: none;
+                            outline: none;
+
+                            &::placeholder {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 30px;
+                                line-height: 36px;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .gender-details {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+
+                        .gender-title {
+                            @include text($fontsize-pr-detail-l, $text-regular, $text-c1-dark, $line-height-1st);
+                        }
+
+                        .category {
+                            @include position($position-2nd, 170px, 12px, $right-1st, $bottom-1st);
+                            display: flex;
+
+                            .male {
+                                @include position($position-2nd, -40px, -12px, $right-1st, $bottom-1st);
+
+                                input {
+                                    @include dimession(65.42px, 50px);
+                                }
+
+                                .gender {
+                                    @include position($position-2nd, 70px, 5px, $right-1st, $bottom-1st);
+                                    @include text($fontsize-pr-detail-l, $text-regular, $text-c1-dark, $line-height-1st);
+
+                                }
+                            }
+
+                            .female {
+                                @include position($position-2nd,  140px, -12px, $right-1st, $bottom-1st);
+                                input {
+                                     @include dimession(65.42px, 50px);
+                                }
+                                .gender {
+                                    @include position($position-2nd, 70px, 5px, $right-1st, $bottom-1st);
+                                    @include text($fontsize-pr-detail-l, $text-regular, $text-c1-dark, $line-height-1st);
+
+                                }
+                            }
+                        }
+                    }
+
+                    .submit {
+                        @include position($position-2nd, $left-btn-submit, $top-btn-submit, $right-1st, $bottom-1st);
+
+                        .btn-submit {
+                            cursor: pointer;
+                            background: #AE18E2;
+                            border: none;
+                            outline: none;
+                            @include dimession(291px, 50px);
+                            @include text($fontsize-pr-detail-l, $text-regular, #FFFCFC, $line-height-1st);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
