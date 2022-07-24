@@ -12,6 +12,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="../libs/slick/slick.css" />
+    <link rel="stylesheet" href="../libs/slick/slick-theme.css" />
     <!-- main css -->
     <link rel="stylesheet" href="../css/style.min.css" />
 </head>
@@ -28,7 +31,7 @@
                 </div>
                 <div class="header-links">
                     <a href="#" class="cart-link text-light">
-                        <i class="fa fa-cart-plus"></i>
+                        <i class="fa fa-shopping-cart"></i>
                         <span class="cart-quantity">(1)</span>
                     </a>
                     <a href="#" class="login-link text-light ml-2">Login</a>
@@ -70,19 +73,54 @@
     <!-- MENU -->
 
     <!-- CAROUSEL -->
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__content">
+                <div class="carousel__item d-flex align-items-center">
+                    <div class="carousel__img">
+                        <img src="../images/carousel-img.png" alt="" />
+                    </div>
+                    <div class="carousel__title">
+                        <h3>Product name</h3>
+                        <h6>Product description</h6>
+                        <button class="btn btn-warning text-light" id="btnBuyNow">Buy now</button>
+                    </div>
+                </div>
+                <h3>2</h3>
+                <h3>3</h3>
+            </div>
+        </div>
+    </section>
     <!-- CAROUSEL -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+        integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"
+        integrity="sha512-fDGBclS3HUysEBIKooKWFDEWWORoA20n60OwY7OSYgxGEew9s7NgDaPkj7gqQcVXnASPvZAiFW8DiytstdlGtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+    <!-- slick -->
+    <script src="../libs/slick/slick.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel__content').slick({
+                arrows: true,
+                slideToShow: 1,
+                dots: true,
+            });
+        });
+    </script>
 </body>
 
 </html>

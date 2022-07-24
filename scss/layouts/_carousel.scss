@@ -1,0 +1,44 @@
+.carousel {
+    .container {
+        .carousel__content {
+            background: url('../../images/bg-bottom-red-wave.png') no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+            height: 500px;
+
+            .slick-dots {
+                bottom: 88px;
+            }
+
+            .carousel__item {
+
+                .carousel__img {
+                    width: 70%;
+                    padding: 5px 0 133px 86px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .carousel__title {
+                    width: 30%;
+
+                    h3 {
+                        font-size: $text-sz-4xl;
+                        line-height: $line-height-3rem;
+                        font-weight: $text-medium;
+                    }
+
+                    h6 {
+                        font-size: $text-sz-2xl;
+                        line-height: $line-height-1rem;
+                        font-weight: $text-medium;
+                    }
+
+                    #btnBuyNow {}
+                }
+            }
+        }
+    }
+}
