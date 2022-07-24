@@ -1,5 +1,6 @@
 // Helpers
-@import "./variable/variable";
+@import "./helpers/variable";
+@import "./helpers/mixin";
 
 // Base
 @import "./base/reset";
@@ -10,6 +11,7 @@
 @import "./layouts/header";
 @import "./layouts/navbar";
 @import "./layouts/carousel";
+@import "./layouts/grid";
 
 // Pages
 @import "./page/index";

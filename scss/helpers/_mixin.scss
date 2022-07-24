@@ -1,0 +1,13 @@
+@mixin textStyle ($fs, $fw, $lh: $lh, $c: $text-black) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+}
+
+@mixin btnStyle ($w, $h, $bgc, $bd: 1px solid transparent) {
+    width: $w;
+    height: $h;
+    background-color: $bgc;
+    border: $bd;
+}

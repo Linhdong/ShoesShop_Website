@@ -1,0 +1,53 @@
+.products {
+    padding-bottom: 104px;
+
+    .container {
+        h3 {
+            @include textStyle($text-sz-4xl, $text-medium);
+            margin-bottom: 90px;
+            text-align: center;
+        }
+
+        .products-grids {
+            .prod-slide-grid {
+                padding: 0 33.5px;
+
+                .product__content {
+                    background-color: $bg-secondary;
+
+                    .product-img {
+                        padding: 45px 57px 0 57px;
+                    }
+
+                    .product-info {
+                        padding: 0 23px;
+
+                        a {
+                            @include textStyle(24px, $text-light);
+                        }
+
+                        p {
+                            @include textStyle($text-sz-2xl, $text-light, $lh, $text-light-gray);
+                        }
+                    }
+
+                    .product-footer {
+                        #btnBuyNow {
+                            @include btnStyle(175px, 64px, $bg-btn-c1-yellow);
+                            @include textStyle (24px, $text-thin);
+                        }
+
+                        p {
+                            @include textStyle(24px, $text-semibold);
+                            background-color: $bg-light-gray;
+                            margin: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

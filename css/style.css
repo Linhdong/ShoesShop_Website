@@ -39,21 +39,35 @@
 }
 .carousel .container .carousel__content .carousel__item .carousel__title h3 {
   font-size: 40px;
-  line-height: 1.2;
   font-weight: 300;
+  line-height: 1.2;
+  color: #000000;
 }
 .carousel .container .carousel__content .carousel__item .carousel__title h6 {
   font-size: 20px;
-  line-height: 1.2;
   font-weight: 300;
+  line-height: 1.2;
+  color: #000000;
 }
+.carousel .container .carousel__content .carousel__item .carousel__title button.carousel-title__btn {
+  width: 150px;
+  height: 50px;
+  background-color: #F8B653;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #000000;
+}
+
 .products {
   padding-bottom: 104px;
 }
 .products .container h3 {
-  font-weight: 400;
   font-size: 40px;
+  font-weight: 400;
   line-height: 1.2;
+  color: #000000;
   margin-bottom: 90px;
   text-align: center;
 }
@@ -70,32 +84,34 @@
   padding: 0 23px;
 }
 .products .container .products-grids .prod-slide-grid .product__content .product-info a {
-  color: #000000;
-  font-weight: 300;
   font-size: 24px;
+  font-weight: 300;
   line-height: 1.2;
+  color: #000000;
 }
 .products .container .products-grids .prod-slide-grid .product__content .product-info p {
-  color: #CBC9C9;
-  line-height: 1.2;
-  font-weight: 300;
   font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #CBC9C9;
 }
 .products .container .products-grids .prod-slide-grid .product__content .product-footer #btnBuyNow {
+  width: 175px;
   height: 64px;
   background-color: #E1B067;
   border: 1px solid transparent;
   font-size: 24px;
-  line-height: 1.2;
   font-weight: 200;
+  line-height: 1.2;
+  color: #000000;
 }
 .products .container .products-grids .prod-slide-grid .product__content .product-footer p {
-  background-color: #DEDDDC;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
-  margin: 0;
   color: #000000;
+  background-color: #DEDDDC;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -25,25 +25,16 @@
                     width: 30%;
 
                     h3 {
-                        font-size: $text-sz-4xl;
-                        line-height: $lh;
-                        font-weight: $text-light;
+                        @include textStyle($text-sz-4xl, $text-light);
                     }
 
                     h6 {
-                        font-size: $text-sz-2xl;
-                        line-height: $lh;
-                        font-weight: $text-light;
+                        @include textStyle($text-sz-2xl, $text-light);
                     }
 
                     button.carousel-title__btn {
-                        width: 150px;
-                        height: 50px;
-                        background-color: $bg-btn-c2-yellow;
-                        border: 1px solid transparent;
-                        font-size: $text-sz-2xl;
-                        line-height: $lh;
-                        font-weight: $text-light;
+                        @include btnStyle (150px, 50px, $bg-btn-c2-yellow);
+                        @include textStyle ($text-sz-2xl, $text-light);
                     }
                 }
             }
