@@ -8,17 +8,21 @@ $text-extabold: 800;
 //Font size variable 
 $fontsize-header: 16px;
 $fontsize-menu: 20px;
+$fontsize-footer: 12px;
 $fontsize-pr-detail-l: 30px;
 $fontsize-pr-detail-m: 24px;
 $fontsize-pr-detail-s: 16px;
+$fontsize-title-detail-pr: 40px;
 
 //color text
 $text-c1-dark: #000;
 $text-c1-light: #fff;
+$text-c2-light: #CBC9C9;
 
 //background variable 
 $bg-c1-header-primary: #000000;
 $bg-c1-menu-primary: #F5F5F5;
+$bg-c1-top-footer: #fff;
 $ng-c1-pr-detail-primary: #F8F8F8;
 $bg-c1-menu-bt-large: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 $bg-c1-menu-bt-small: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
@@ -26,10 +30,12 @@ $bg-c2-menu-bt-small: #CCCCCC;
 $bg-c1-relate-bt-medimum: #E1B067;
 $bg-c1-card-img: #F8F8F8;
 
-
 //lineheight variable
 $line-height-1st: 36px;
 $line-height-menu: 24px;
+$line-height-footer: 16px;
+$line-height-detail-pr: 48px;
+$line-height-name-detail-pr: 29px;
 
 //Mixin text
 @mixin text($fsize: $fontsize-header, $fweight: $text-extralight, $color: $text-c1-dark, $lineheight: $line-height-1st) {
@@ -46,10 +52,20 @@ $position-1st: relative;
 $position-2nd: absolute;
 $top-1st: 0;
 $top-fram: 20px;
+$top-img-card: 45px;
+$top-body-card: 231px;
+$top-btn-card: 303px;
 $left-1st: 0;
 $left-fram: 85px;
+$left-img-card: 57px;
+$left-body-card: 23px;
+$left-btn-price-card: 157px;
 $right-1st: 0;
+$right-img-card: 0;
+$right-body-card: 0;
 $bottom-1st: 0;
+$bottom-img-card: 0;
+$bottom-body-card: 0; 
 
 
 //Mixin positon
@@ -64,7 +80,14 @@ $bottom-1st: 0;
 //Width and Height variable
 $width-1st: 0;
 $height-1st: 0;
-
+$width-card: 334px;
+$height-card: 369px;
+$width-img-card: 220px;
+$height-img-card: 156px;
+$width-body-card: 187px;
+$height-body-card: 29px;
+$width-btn-card: 175px;
+$height-btn-card: 64px;
 //Mixin Dimession 
 @mixin dimession ($width-size: $width-1st, $height-size:$height-1st){
     width: $width-size;

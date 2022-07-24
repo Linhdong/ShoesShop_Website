@@ -153,6 +153,7 @@ header {
                     @include dimession(334px, 315px);
                     background: #F8F8F8;
                     @include position($position-2nd, 85px, 20px, 0, 0);
+
                     img {
                         width: 230px;
                         height: 156px;
@@ -185,6 +186,7 @@ header {
                 .size {
                     max-width: 320px;
                     @include position($position-2nd, 0, 190px, 0, 0);
+
                     .pro-size {
                         border: none;
                         outline: none;
@@ -234,6 +236,7 @@ header {
 
                 .buy {
                     @include position($position-2nd, 0, 345px, 0, 0);
+
                     .push {
                         border: none;
                         outline: none;
@@ -245,5 +248,458 @@ header {
             }
         }
 
+    }
+}
+
+.relate-product {
+    .container {
+        position: relative;
+        height: 1044px;
+
+        .title-relate-product {
+            @include position($position-2nd, 476px, 16px, 0, 0);
+            @include dimession(386px, 48px);
+            @include text($fontsize-title-detail-pr, $text-regular, $text-c1-dark, $line-height-detail-pr);
+        }
+
+        .product-item-1 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 99px, 153px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+
+        .product-item-2 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 505px, 153px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+
+        .product-item-3 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 914px, 153px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+
+        .product-item-4 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 99px, 569px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+
+        .product-item-5 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 505px, 569px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+
+        .product-item-6 {
+            background: $ng-c1-pr-detail-primary;
+            @include position($position-2nd, 914px, 569px, 0, 0);
+            @include dimession($width-card, $height-card);
+
+            .card-img-top {
+                @include dimession($width-img-card, $height-img-card);
+                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
+            }
+
+            .card-body {
+                @include dimession($width-body-card, $height-body-card);
+                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+
+                .card-title {
+                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .card-text {
+                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                }
+            }
+
+            .card-footer {
+                .btn-buy {
+                    border: none;
+                    outline: none;
+                    background: $bg-c1-relate-bt-medimum;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                }
+
+                .btn-price {
+                    border: none;
+                    outline: none;
+                    @include dimession($width-btn-card, $height-btn-card);
+                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
+                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                }
+            }
+
+        }
+    }
+}
+
+.footer-product {
+    padding: 20px 0;
+    .container {
+        .bg-top-footer {
+            height: 115px;
+            background: $bg-c1-top-footer;
+            .top-footer {
+                display: flex;
+                width: 1000px;
+                margin: 0 auto;
+
+                .card-1 {
+                    width: 300px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            }
+                        }
+                    }
+                }
+
+                .card-2 {
+                    width: 300px;
+                    padding-left: 40px;
+                    border-left: 1px solid $text-c2-light;
+                    border-right: 1px solid $text-c2-light;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            }
+                        }
+                    }
+                }
+
+                .card-3 {
+                    width: 400px;
+                    padding-left: 40px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bg-bottom-footer {
+            padding: 15px 0;
+            height: 115px;
+            background: #efeeee;
+            .bottom-footer {
+                display: flex;
+                width: 1000px;
+                margin: 0 auto;
+
+                .card-1 {
+                    width: 300px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-2 {
+                    width: 300px;
+                    padding-left: 40px;
+                    border-left: 1px solid $text-c2-light;
+                    border-right: 1px solid $text-c2-light;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-3 {
+                    width: 400px;
+                    padding-left: 40px;
+                    
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
