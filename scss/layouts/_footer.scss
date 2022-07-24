@@ -1,0 +1,178 @@
+.footer-product {
+    padding: 20px 0;
+
+    .container {
+        .bg-top-footer {
+            height: 115px;
+            background: $bg-light;
+
+            .top-footer {
+                display: flex;
+                width: 1000px;
+                margin: 0 auto;
+
+                .card-1 {
+                    width: 300px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            }
+                        }
+                    }
+                }
+
+                .card-2 {
+                    width: 300px;
+                    padding-left: 40px;
+                    border-left: 1px solid $text-c2-light;
+                    border-right: 1px solid $text-c2-light;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            }
+                        }
+                    }
+                }
+
+                .card-3 {
+                    width: 400px;
+                    padding-left: 40px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bg-bottom-footer {
+            padding: 15px 0;
+            height: 115px;
+            background: #efeeee;
+
+            .bottom-footer {
+                display: flex;
+                width: 1000px;
+                margin: 0 auto;
+
+                .card-1 {
+                    width: 300px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-2 {
+                    width: 300px;
+                    padding-left: 40px;
+                    border-left: 1px solid $text-c2-light;
+                    border-right: 1px solid $text-c2-light;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .card-3 {
+                    width: 400px;
+                    padding-left: 40px;
+
+                    .card-header {
+                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                    }
+
+                    .list-group {
+                        list-style: none;
+
+                        .list-group-item {
+                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+
+                            a {
+                                text-decoration: none;
+                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                transition: all 0.3s linear;
+
+                                &:hover {
+                                    color: $bg-c1-relate-bt-medimum;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
