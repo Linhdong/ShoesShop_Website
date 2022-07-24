@@ -15,7 +15,7 @@
                     width: 300px;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include textStyle ($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
@@ -24,7 +24,7 @@
                         .list-group-item {
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                                @include textStyle(12px, $text-medium)
                             }
                         }
                     }
@@ -33,11 +33,11 @@
                 .card-2 {
                     width: 300px;
                     padding-left: 40px;
-                    border-left: 1px solid $text-c2-light;
-                    border-right: 1px solid $text-c2-light;
+                    border-left: 1px solid #CBC9C9;
+                    border-right: 1px solid #CBC9C9;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include textStyle ($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
@@ -46,7 +46,7 @@
                         .list-group-item {
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                                @include text(12px, $text-medium, $text-black);
                             }
                         }
                     }
@@ -57,22 +57,22 @@
                     padding-left: 40px;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include text($text-sz-2xl, $text-semibold, $text-black);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            @include text(12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                @include text(12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
-                                    color: $bg-c1-relate-bt-medimum;
+                                    color: #E1B067;
                                 }
                             }
                         }
@@ -95,22 +95,22 @@
                     width: 300px;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include text($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            @include text(12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                @include text(12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
-                                    color: $bg-c1-relate-bt-medimum;
+                                    color: #E1B067;
                                 }
                             }
                         }
@@ -120,26 +120,26 @@
                 .card-2 {
                     width: 300px;
                     padding-left: 40px;
-                    border-left: 1px solid $text-c2-light;
-                    border-right: 1px solid $text-c2-light;
+                    border-left: 1px solid #CBC9C9;
+                    border-right: 1px solid #CBC9C9;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include text($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            @include text(12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                @include text(12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
-                                    color: $bg-c1-relate-bt-medimum;
+                                    color: #E1B067;
                                 }
                             }
                         }
@@ -151,22 +151,22 @@
                     padding-left: 40px;
 
                     .card-header {
-                        @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        @include text($text-sz-2xl, $text-semibold);
                     }
 
                     .list-group {
                         list-style: none;
 
                         .list-group-item {
-                            @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-footer);
+                            @include text(12px, $text-medium);
 
                             a {
                                 text-decoration: none;
-                                @include text($fontsize-footer, $text-regular, $text-c1-dark, $line-height-menu);
+                                @include text(12px, $text-medium);
                                 transition: all 0.3s linear;
 
                                 &:hover {
-                                    color: $bg-c1-relate-bt-medimum;
+                                    color: #E1B067;
                                 }
                             }
                         }
