@@ -1,178 +1,54 @@
-.footer-product {
-    padding: 20px 0;
+.footer {
+    .footer-top {
+        background-color: $bg-c2-light-gray;
+        padding: 30px 0;
 
-    .container {
-        .bg-top-footer {
-            height: 115px;
-            background: $bg-light;
+        .container {
+            .col-4 {
 
-            .top-footer {
-                display: flex;
-                width: 1000px;
-                margin: 0 auto;
-
-                .card-1 {
-                    width: 300px;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            a {
-                                text-decoration: none;
-                                @include textStyle(12px, $text-medium)
-                            }
-                        }
-                    }
+                &:nth-child(1),
+                &:nth-child(2) {
+                    border-right: 1px solid rgba(225, 225, 225, 0.8);
                 }
 
-                .card-2 {
-                    width: 300px;
-                    padding-left: 40px;
-                    border-left: 1px solid #CBC9C9;
-                    border-right: 1px solid #CBC9C9;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            a {
-                                text-decoration: none;
-                                @include textStyle (12px, $text-medium);
-                            }
-                        }
-                    }
-                }
-
-                .card-3 {
-                    width: 400px;
-                    padding-left: 40px;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold, $text-black);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            @include textStyle (12px, $text-medium);
-
-                            a {
-                                text-decoration: none;
-                                @include textStyle (12px, $text-medium);
-                                transition: all 0.3s linear;
-
-                                &:hover {
-                                    color: #E1B067;
-                                }
+                .footer-top__column {
+                    .footer__list {
+                        .footer__list-item {
+                            .footer__list-link {
+                                @include textStyle(16px, $text-medium)
                             }
                         }
                     }
                 }
             }
         }
+    }
 
-        .bg-bottom-footer {
-            padding: 15px 0;
-            height: 115px;
-            background: #efeeee;
+    .footer-bottom {
+        background-color: $bg-c1-gray;
+        padding: 30px 0;
 
-            .bottom-footer {
-                display: flex;
-                width: 1000px;
-                margin: 0 auto;
+        .container {
+            .col-4 {
 
-                .card-1 {
-                    width: 300px;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            @include textStyle (12px, $text-medium);
-
-                            a {
-                                text-decoration: none;
-                                @include textStyle (12px, $text-medium);
-                                transition: all 0.3s linear;
-
-                                &:hover {
-                                    color: #E1B067;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .card-2 {
-                    width: 300px;
-                    padding-left: 40px;
-                    border-left: 1px solid #CBC9C9;
-                    border-right: 1px solid #CBC9C9;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            @include textStyle (12px, $text-medium);
-
-                            a {
-                                text-decoration: none;
-                                @include textStyle (12px, $text-medium);
-                                transition: all 0.3s linear;
-
-                                &:hover {
-                                    color: #E1B067;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .card-3 {
-                    width: 400px;
-                    padding-left: 40px;
-
-                    .card-header {
-                        @include textStyle ($text-sz-2xl, $text-semibold);
-                    }
-
-                    .list-group {
-                        list-style: none;
-
-                        .list-group-item {
-                            @include textStyle (12px, $text-medium);
-
-                            a {
-                                text-decoration: none;
-                                @include textStyle (12px, $text-medium);
-                                transition: all 0.3s linear;
-
-                                &:hover {
-                                    color: #E1B067;
-                                }
-                            }
-                        }
-                    }
+                &:nth-child(1),
+                &:nth-child(2) {
+                    border-right: 1px solid rgba(225, 225, 225, 0.8);
                 }
             }
         }
+    }
+
+    .footer-title {
+        text-transform: uppercase;
+        @include textStyle (18px, $text-bold);
+    }
+
+    .footer-text {
+        @include textStyle (16px, $text-medium);
+    }
+
+    .footer-link {
+        @include textStyle (16px, $text-medium, $lh, $text-c1-pink);
     }
 }
