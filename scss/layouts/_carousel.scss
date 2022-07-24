@@ -36,7 +36,15 @@
                         font-weight: $text-light;
                     }
 
-                    #btnBuyNow {}
+                    button.carousel-title__btn {
+                        width: 150px;
+                        height: 50px;
+                        background-color: $bg-btn-c2-yellow;
+                        border: 1px solid transparent;
+                        font-size: $text-sz-2xl;
+                        line-height: $lh;
+                        font-weight: $text-light;
+                    }
                 }
             }
         }
