@@ -313,7 +313,7 @@ header {
                         .price-text {
                             background: #DEDDDC;
                             padding: 17px 75px;
-                            @include dimession(196px, $height-btn-card);
+                            @include dimession(200px, $height-btn-card);
                             @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
                         }
                     }
