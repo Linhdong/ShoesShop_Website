@@ -101,12 +101,16 @@ ul {
   line-height: 1.2;
   color: #000000;
 }
-.products .container .products-grids .prod-slide-grid .product__content .product-info p {
+.products .container .products-grids .prod-slide-grid .product__content .product-info div {
+  max-height: 50px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.products .container .products-grids .prod-slide-grid .product__content .product-info div p {
   font-size: 20px;
   font-weight: 300;
   line-height: 1.2;
   color: #CBC9C9;
-  max-height: 42px;
 }
 .products .container .products-grids .prod-slide-grid .product__content .product-footer #btnBuyNow {
   width: 175px;

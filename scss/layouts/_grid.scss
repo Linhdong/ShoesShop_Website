@@ -35,9 +35,15 @@
                             @include textStyle(24px, $text-light);
                         }
 
-                        p {
-                            @include textStyle($text-sz-2xl, $text-light, $lh, $text-light-gray);
-                            max-height: 42px;
+                        div {
+                            max-height: 50px;
+                            overflow: hidden;
+                            margin-bottom: 10px;
+
+                            p {
+                                @include textStyle($text-sz-2xl, $text-light, $lh, $text-light-gray);
+
+                            }
                         }
                     }
 

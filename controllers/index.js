@@ -28,7 +28,9 @@ function renderGridProduct(arrProduct) {
                             <a href="./detail.html">
                                 <h5 id="name">${product.name}</h5>
                             </a>
-                            <p id="shortDescription">${product.shortDescription}</p>
+                            <div>
+                                <p id="shortDescription">${product.shortDescription}</p>
+                            </div>
                         </div>
                         <div class="product-footer row px-3">
                             <button id="btnBuyNow" class="col-6">Buy now</button>
