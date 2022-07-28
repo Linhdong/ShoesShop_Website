@@ -4,19 +4,28 @@
     .container {
         h3 {
             @include textStyle($text-sz-4xl, $text-medium);
-            margin-bottom: 90px;
+            margin-bottom: 40px;
             text-align: center;
         }
 
         .products-grids {
             .prod-slide-grid {
                 padding: 0 33.5px;
+                width: 334px;
+                height: 369px;
+                margin-top: 50px;
 
                 .product__content {
                     background-color: $bg-secondary;
 
                     .product-img {
                         padding: 45px 57px 0 57px;
+
+                        img {
+                            width: 220px;
+                            height: 156px;
+                            object-fit: cover;
+                        }
                     }
 
                     .product-info {
@@ -28,6 +37,7 @@
 
                         p {
                             @include textStyle($text-sz-2xl, $text-light, $lh, $text-light-gray);
+                            max-height: 42px;
                         }
                     }
 
