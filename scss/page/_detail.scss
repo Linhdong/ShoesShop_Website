@@ -253,287 +253,87 @@ header {
 
 .relate-product {
     .container {
-        position: relative;
-        height: 1044px;
-
         .title-relate-product {
-            @include position($position-2nd, 476px, 16px, 0, 0);
-            @include dimession(386px, 48px);
+            text-align: center;
+            margin-bottom: 50px;
             @include text($fontsize-title-detail-pr, $text-regular, $text-c1-dark, $line-height-detail-pr);
         }
+        .row-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
 
-        .product-item-1 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 99px, 153px, 0, 0);
-            @include dimession($width-card, $height-card);
+            .col-card {
+                width: calc(100% / 3);
+                padding-bottom: 50px;
 
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
+                .card {
+                    background: #F8F8F8;
+                    margin: 10px 20px;
 
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
+                    .header-card {
+                        padding-top: 45px;
+                        padding-left: 57px;
+                        padding-right: 57px;
+                        padding-bottom: 0;
 
-                .card-title {
-                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
+                        img {
+                            width: 220px;
+                            height: 156px;
+                        }
+                    }
 
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
-                }
-            }
+                    .card-body {
+                        padding: 0 23px;
 
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
+                        .card-title {
+                            text-decoration: none;
+                            @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
+                        }
 
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
+                        .card-text {
+                            padding: 5px 0;
+                            @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                        }
+                    }
 
-        }
+                    .card-footer {
+                        padding-top: 5px;
+                        display: flex;
+                        align-items: center;
 
-        .product-item-2 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 505px, 153px, 0, 0);
-            @include dimession($width-card, $height-card);
+                        .btn-buy {
+                            border: none;
+                            outline: none;
+                            background: $bg-c1-relate-bt-medimum;
+                            @include dimession($width-btn-card, $height-btn-card);
+                            @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
+                        }
 
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
-
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
-
-                .card-title {
-                @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
+                        .price-text {
+                            background: #DEDDDC;
+                            padding: 17px 75px;
+                            @include dimession(196px, $height-btn-card);
+                            @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
+                        }
+                    }
                 }
             }
 
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
-
-        }
-
-        .product-item-3 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 914px, 153px, 0, 0);
-            @include dimession($width-card, $height-card);
-
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
-
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
-
-                .card-title {
-                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
-                }
-            }
-
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
-
-        }
-
-        .product-item-4 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 99px, 569px, 0, 0);
-            @include dimession($width-card, $height-card);
-
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
-
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
-
-                .card-title {
-                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
-                }
-            }
-
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
-
-        }
-
-        .product-item-5 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 505px, 569px, 0, 0);
-            @include dimession($width-card, $height-card);
-
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
-
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
-
-                .card-title {
-                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
-                }
-            }
-
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
-
-        }
-
-        .product-item-6 {
-            background: $ng-c1-pr-detail-primary;
-            @include position($position-2nd, 914px, 569px, 0, 0);
-            @include dimession($width-card, $height-card);
-
-            .card-img-top {
-                @include dimession($width-img-card, $height-img-card);
-                @include position($position-2nd, $left-img-card, $top-img-card, $right-img-card, $bottom-img-card);
-            }
-
-            .card-body {
-                @include dimession($width-body-card, $height-body-card);
-                @include position($position-2nd, $left-body-card, $top-body-card, $right-body-card, $bottom-body-card);
-
-                .card-title {
-                    @include text($fontsize-pr-detail-m, $text-extralight, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .card-text {
-                    @include text($fontsize-menu, text-extralight, $text-c2-light, $line-height-menu);
-                }
-            }
-
-            .card-footer {
-                .btn-buy {
-                    border: none;
-                    outline: none;
-                    background: $bg-c1-relate-bt-medimum;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-1st, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-light, $text-c1-dark, $line-height-name-detail-pr);
-                }
-
-                .btn-price {
-                    border: none;
-                    outline: none;
-                    @include dimession($width-btn-card, $height-btn-card);
-                    @include position($position-2nd, $left-btn-price-card, $top-btn-card, $right-1st, $bottom-1st);
-                    @include text($fontsize-pr-detail-m, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
-                }
-            }
 
         }
     }
 }
 
+
 .footer-product {
     padding: 20px 0;
+
     .container {
         .bg-top-footer {
             height: 115px;
             background: $bg-c1-top-footer;
+
             .top-footer {
                 display: flex;
                 width: 1000px;
@@ -613,6 +413,7 @@ header {
             padding: 15px 0;
             height: 115px;
             background: #efeeee;
+
             .bottom-footer {
                 display: flex;
                 width: 1000px;
@@ -676,7 +477,7 @@ header {
                 .card-3 {
                     width: 400px;
                     padding-left: 40px;
-                    
+
                     .card-header {
                         @include text($fontsize-menu, $text-semibold, $text-c1-dark, $line-height-name-detail-pr);
                     }

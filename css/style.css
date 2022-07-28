@@ -325,18 +325,9 @@ header .container .detail-header ul #item4 a {
   color: #FFF8F8;
 }
 
-.relate-product .container {
-  position: relative;
-  height: 1044px;
-}
 .relate-product .container .title-relate-product {
-  position: absolute;
-  left: 476px;
-  top: 16px;
-  right: 0;
-  bottom: 0;
-  width: 386px;
-  height: 48px;
+  text-align: center;
+  margin-bottom: 50px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -344,35 +335,34 @@ header .container .detail-header ul #item4 a {
   line-height: 48px;
   color: #000;
 }
-.relate-product .container .product-item-1 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 99px;
-  top: 153px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
+.relate-product .container .row-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.relate-product .container .product-item-1 .card-img-top {
+.relate-product .container .row-card .col-card {
+  width: 33.3333333333%;
+  padding-bottom: 50px;
+}
+.relate-product .container .row-card .col-card .card {
+  background: #F8F8F8;
+  margin: 10px 20px;
+}
+.relate-product .container .row-card .col-card .card .header-card {
+  padding-top: 45px;
+  padding-left: 57px;
+  padding-right: 57px;
+  padding-bottom: 0;
+}
+.relate-product .container .row-card .col-card .card .header-card img {
   width: 220px;
   height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
 }
-.relate-product .container .product-item-1 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
+.relate-product .container .row-card .col-card .card .card-body {
+  padding: 0 23px;
 }
-.relate-product .container .product-item-1 .card-body .card-title {
+.relate-product .container .row-card .col-card .card .card-body .card-title {
+  text-decoration: none;
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
@@ -380,7 +370,8 @@ header .container .detail-header ul #item4 a {
   line-height: 29px;
   color: #000;
 }
-.relate-product .container .product-item-1 .card-body .card-text {
+.relate-product .container .row-card .col-card .card .card-body .card-text {
+  padding: 5px 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: text-extralight;
@@ -388,17 +379,17 @@ header .container .detail-header ul #item4 a {
   line-height: 24px;
   color: #CBC9C9;
 }
-.relate-product .container .product-item-1 .card-footer .btn-buy {
+.relate-product .container .row-card .col-card .card .card-footer {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.relate-product .container .row-card .col-card .card .card-footer .btn-buy {
   border: none;
   outline: none;
   background: #E1B067;
   width: 175px;
   height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
@@ -406,411 +397,11 @@ header .container .detail-header ul #item4 a {
   line-height: 29px;
   color: #000;
 }
-.relate-product .container .product-item-1 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
+.relate-product .container .row-card .col-card .card .card-footer .price-text {
+  background: #DEDDDC;
+  padding: 17px 75px;
+  width: 196px;
   height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-2 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 505px;
-  top: 153px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
-}
-.relate-product .container .product-item-2 .card-img-top {
-  width: 220px;
-  height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-2 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-2 .card-body .card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-2 .card-body .card-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: text-extralight;
-  font-size: 20px;
-  line-height: 24px;
-  color: #CBC9C9;
-}
-.relate-product .container .product-item-2 .card-footer .btn-buy {
-  border: none;
-  outline: none;
-  background: #E1B067;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-2 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-3 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 914px;
-  top: 153px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
-}
-.relate-product .container .product-item-3 .card-img-top {
-  width: 220px;
-  height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-3 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-3 .card-body .card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-3 .card-body .card-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: text-extralight;
-  font-size: 20px;
-  line-height: 24px;
-  color: #CBC9C9;
-}
-.relate-product .container .product-item-3 .card-footer .btn-buy {
-  border: none;
-  outline: none;
-  background: #E1B067;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-3 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-4 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 99px;
-  top: 569px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
-}
-.relate-product .container .product-item-4 .card-img-top {
-  width: 220px;
-  height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-4 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-4 .card-body .card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-4 .card-body .card-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: text-extralight;
-  font-size: 20px;
-  line-height: 24px;
-  color: #CBC9C9;
-}
-.relate-product .container .product-item-4 .card-footer .btn-buy {
-  border: none;
-  outline: none;
-  background: #E1B067;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-4 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-5 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 505px;
-  top: 569px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
-}
-.relate-product .container .product-item-5 .card-img-top {
-  width: 220px;
-  height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-5 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-5 .card-body .card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-5 .card-body .card-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: text-extralight;
-  font-size: 20px;
-  line-height: 24px;
-  color: #CBC9C9;
-}
-.relate-product .container .product-item-5 .card-footer .btn-buy {
-  border: none;
-  outline: none;
-  background: #E1B067;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-5 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-6 {
-  background: #F8F8F8;
-  position: absolute;
-  left: 914px;
-  top: 569px;
-  right: 0;
-  bottom: 0;
-  width: 334px;
-  height: 369px;
-}
-.relate-product .container .product-item-6 .card-img-top {
-  width: 220px;
-  height: 156px;
-  position: absolute;
-  left: 57px;
-  top: 45px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-6 .card-body {
-  width: 187px;
-  height: 29px;
-  position: absolute;
-  left: 23px;
-  top: 231px;
-  right: 0;
-  bottom: 0;
-}
-.relate-product .container .product-item-6 .card-body .card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-6 .card-body .card-text {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: text-extralight;
-  font-size: 20px;
-  line-height: 24px;
-  color: #CBC9C9;
-}
-.relate-product .container .product-item-6 .card-footer .btn-buy {
-  border: none;
-  outline: none;
-  background: #E1B067;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 0;
-  top: 303px;
-  right: 0;
-  bottom: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000;
-}
-.relate-product .container .product-item-6 .card-footer .btn-price {
-  border: none;
-  outline: none;
-  width: 175px;
-  height: 64px;
-  position: absolute;
-  left: 157px;
-  top: 303px;
-  right: 0;
-  bottom: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
