@@ -1,0 +1,43 @@
+.carousel {
+    .container {
+        .carousel__content {
+            background: url('../../images/bg-bottom-red-wave.png') no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+            height: 500px;
+
+            .slick-dots {
+                bottom: 88px;
+            }
+
+            .carousel__item {
+
+                .carousel__img {
+                    width: 70%;
+                    padding: 5px 0 133px 86px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .carousel__title {
+                    width: 30%;
+
+                    h3 {
+                        @include textStyle($text-sz-4xl, $text-light);
+                    }
+
+                    h6 {
+                        @include textStyle($text-sz-2xl, $text-light);
+                    }
+
+                    button.carousel-title__btn {
+                        @include btnStyle (150px, 50px, $bg-btn-c2-yellow);
+                        @include textStyle ($text-sz-2xl, $text-light);
+                    }
+                }
+            }
+        }
+    }
+}
