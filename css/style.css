@@ -745,7 +745,7 @@ ul {
   line-height: 36px;
   color: #000;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender {
   position: absolute;
   left: 170px;
   top: 12px;
@@ -753,18 +753,18 @@ ul {
   bottom: 0;
   display: flex;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .male {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .male {
   position: absolute;
   left: -40px;
   top: -12px;
   right: 0;
   bottom: 0;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .male input {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .male input {
   width: 65.42px;
   height: 50px;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .male .gender {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .male .gender {
   position: absolute;
   left: 70px;
   top: 5px;
@@ -777,18 +777,18 @@ ul {
   line-height: 36px;
   color: #000;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .female {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .female {
   position: absolute;
   left: 140px;
   top: -12px;
   right: 0;
   bottom: 0;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .female input {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .female input {
   width: 65.42px;
   height: 50px;
 }
-.register .container .infor-register .user-detail .right-infor .gender-details .category .female .gender {
+.register .container .infor-register .user-detail .right-infor .gender-details #gender .female .gender {
   position: absolute;
   left: 70px;
   top: 5px;
@@ -808,7 +808,7 @@ ul {
   right: 0;
   bottom: 0;
 }
-.register .container .infor-register .user-detail .right-infor .submit .btn-submit {
+.register .container .infor-register .user-detail .right-infor .submit #btn-submit {
   cursor: pointer;
   background: #AE18E2;
   border: none;

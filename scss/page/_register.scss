@@ -92,7 +92,7 @@
                             @include text($fontsize-pr-detail-l, $text-regular, $text-c1-dark, $line-height-1st);
                         }
 
-                        .category {
+                        #gender {
                             @include position($position-2nd, 170px, 12px, $right-1st, $bottom-1st);
                             display: flex;
 
@@ -127,7 +127,7 @@
                     .submit {
                         @include position($position-2nd, $left-btn-submit, $top-btn-submit, $right-1st, $bottom-1st);
 
-                        .btn-submit {
+                        #btn-submit {
                             cursor: pointer;
                             background: #AE18E2;
                             border: none;
