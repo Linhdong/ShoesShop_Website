@@ -2,6 +2,7 @@ export function Validation() {
     this.kiemTraRong = function (value, selectorError, selectorRequired) {
         if (value.trim() === "") {
             document.querySelector(selectorError).innerHTML = "Không được bỏ trống trường này!";
+            document.querySelector(selectorRequired).style.display = "inline-block";
             return false;
         }
         document.querySelector(selectorError).innerHTML = "";
@@ -16,6 +17,7 @@ export function Validation() {
             return true;
         }
         document.querySelector(selectorError).innerHTML = 'Tất cả phải là ký tự!';
+        document.querySelector(selectorRequired).style.display = "inline-block";
         return false;
     };
     this.kiemTraSo = function (value, selectorError, selectorRequired) {
@@ -26,6 +28,7 @@ export function Validation() {
             return true;
         }
         document.querySelector(selectorError).innerHTML = 'Số điện thoại phải chỉ bao gồm số!';
+        document.querySelector(selectorRequired).style.display = "inline-block";
         return false;
     };
     this.kiemTraEmail = function (value, selectorError, selectorRequired) {
@@ -37,11 +40,13 @@ export function Validation() {
             return true;
         }
         document.querySelector(selectorError).innerHTML = 'Email không hợp lệ!';
+        document.querySelector(selectorRequired).style.display = "inline-block";
         return false;
     };
     this.kiemTraPassConfirm = function (pwValue, pwConfirmValue, selectorError, selectorRequired) {
         if (pwValue !== pwConfirmValue) {
             document.querySelector(selectorError).innerHTML = "Mật khẩu nhập lại chưa đúng!";
+            document.querySelector(selectorRequired).style.display = "inline-block";
             return false;
         } else {
             document.querySelector(selectorError).innerHTML = '';
