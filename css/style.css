@@ -224,7 +224,7 @@ header .container .detail-header ul #item4 a {
   color: #1ED90E;
 }
 .product-detail .container .content-product .right-box .size {
-  max-width: 320px;
+  max-width: 100%;
   position: absolute;
   left: 0;
   top: 190px;

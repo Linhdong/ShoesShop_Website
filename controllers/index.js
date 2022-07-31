@@ -1,4 +1,4 @@
-// call api lấy dữ liệu từ back-end
+/// call api lấy dữ liệu từ back-end
 function getProductApi() {
     var promise = axios({
         url: "https://shop.cyberlearn.vn/api/Product",
@@ -25,7 +25,7 @@ function renderGridProduct(arrProduct) {
                             <img src="${product.image}" alt="${product.alias}" id="image" />
                         </div>
                         <div class="product-info">
-                            <a href="./detail.html">
+                            <a href="./detail.html?id=${product.id}">
                                 <h5 id="name">${product.name}</h5>
                             </a>
                             <div>
