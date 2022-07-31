@@ -36,9 +36,9 @@
                         margin-bottom: 30px;
 
                         input {
-                            width: 346px;
-                            height: 36px;
-                            @include dimession($width-input, $height-input);
+                            // width: 346px;
+                            // height: 36px;
+                            @include dimession(440px, $height-input);
                             margin: 5px 0;
                             border: none;
                             outline: none;
@@ -65,9 +65,9 @@
                         margin-bottom: 30px;
 
                         input {
-                            width: 346px;
-                            height: 36px;
-                            @include dimession($width-input, $height-input);
+                            // width: 346px;
+                            // height: 36px;
+                            @include dimession(440px, $height-input);
                             margin: 5px 0;
                             border: none;
                             outline: none;
