@@ -4,7 +4,7 @@
 @import "./../variable/variable";
 
 header {
-    width: 1280px;
+    // width: 1280px;
     height: 50px;
     margin: 0 auto;
     background: #000000;
@@ -70,10 +70,8 @@ header {
 }
 
 .menu {
-
+    background-color: $bg-c1-menu-primary;
     .container {
-        background-color: $bg-c1-menu-primary;
-
         .navbar {
             .collapse {
                 .navbar-nav {
