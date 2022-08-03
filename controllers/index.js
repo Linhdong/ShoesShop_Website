@@ -25,7 +25,7 @@ function renderGridProduct(arrProduct) {
                             <img src="${product.image}" alt="${product.alias}" id="image" />
                         </div>
                         <div class="product-info">
-                            <a href="./detail.html?id=${product.id}">
+                            <a href="./view/detail.html?id=${product.id}">
                                 <h5 id="name">${product.name}</h5>
                             </a>
                             <div>
