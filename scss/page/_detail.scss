@@ -32,22 +32,23 @@ header {
 
                 #item1 {
                     a {
+                        display: flex;
+                        align-items: center;
+
                         img {
                             width: 31px;
                             height: 31px;
+                        }
+
+                        p {
+                            margin-right: 15px;
+                            @include text($fontsize-pr-detail-l, $text-extralight, $text-c1-light, $line-height-1st);
+                            margin-bottom: 0;
                         }
                     }
                 }
 
                 #item2 {
-                    margin-right: 15px;
-
-                    p {
-                        @include text($fontsize-pr-detail-l, $text-extralight, $text-c1-light, $line-height-1st);
-                    }
-                }
-
-                #item3 {
                     margin-right: 15px;
 
                     a {
@@ -56,7 +57,7 @@ header {
                     }
                 }
 
-                #item4 {
+                #item3 {
                     margin-right: 15px;
 
                     a {
@@ -71,6 +72,7 @@ header {
 
 .menu {
     background-color: $bg-c1-menu-primary;
+
     .container {
         .navbar {
             .collapse {
@@ -256,6 +258,7 @@ header {
             margin-bottom: 50px;
             @include text($fontsize-title-detail-pr, $text-regular, $text-c1-dark, $line-height-detail-pr);
         }
+
         .row-card {
             display: flex;
             flex-wrap: wrap;

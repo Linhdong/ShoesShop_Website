@@ -16,7 +16,6 @@ ul {
 }
 
 header {
-  width: 1280px;
   height: 50px;
   margin: 0 auto;
   background: #000000;
@@ -47,19 +46,34 @@ header .container .detail-header ul {
   display: flex;
   align-items: center;
 }
+header .container .detail-header ul #item1 a {
+  display: flex;
+  align-items: center;
+}
 header .container .detail-header ul #item1 a img {
   width: 31px;
   height: 31px;
 }
-header .container .detail-header ul #item2 {
+header .container .detail-header ul #item1 a p {
   margin-right: 15px;
-}
-header .container .detail-header ul #item2 p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
   line-height: 36px;
+  color: #fff;
+  margin-bottom: 0;
+}
+header .container .detail-header ul #item2 {
+  margin-right: 15px;
+}
+header .container .detail-header ul #item2 a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 0;
   color: #fff;
 }
 header .container .detail-header ul #item3 {
@@ -74,20 +88,8 @@ header .container .detail-header ul #item3 a {
   line-height: 0;
   color: #fff;
 }
-header .container .detail-header ul #item4 {
-  margin-right: 15px;
-}
-header .container .detail-header ul #item4 a {
-  text-decoration: none;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 0;
-  color: #fff;
-}
 
-.menu .container {
+.menu {
   background-color: #F5F5F5;
 }
 .menu .container .navbar .collapse .navbar-nav {
